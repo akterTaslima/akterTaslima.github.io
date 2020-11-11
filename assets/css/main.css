@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	body {
-		padding-top: 3.5em;
+		padding-top: 0em;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -98,11 +98,12 @@ input, select, textarea {
 		}
 
 	body, input, textarea, select {
-		font-family: 'Open Sans', sans-serif;
+		/*font-family: 'Open Sans', sans-serif;
+		font-weight: 300;*/
+		font-family: 'Serif', Times;
 		line-height: 1.85em;
-		color: #888;
-		font-weight: 300;
-		font-size: 13pt;
+		color: #555555;
+		font-size: 12.5pt;
 	}
 
 	a {
@@ -111,7 +112,7 @@ input, select, textarea {
 		-ms-transition: color .2s ease-in-out;
 		transition: color .2s ease-in-out;
 		color: #43B3E0;
-		text-decoration: underline;
+		text-decoration: none;
 	}
 
 		a:hover {
@@ -151,11 +152,12 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #3e3e3e;
-		margin: 0 0 0.75em 0;
+		margin: 0 0 1.5em 0;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 		text-decoration: none;
+		/*color: #43B3E0;*/
 		color: inherit;
 	}
 
@@ -174,7 +176,7 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 2em;
+		font-size: 2.5em;
 		letter-spacing: -0.015em;
 	}
 
@@ -182,7 +184,10 @@ input, select, textarea {
 		font-size: 1.5em;
 		letter-spacing: -0.015em;
 	}
-
+	h4 {
+		font-size: 1.25em;
+		margin: 0 0 0.5em 0;
+	}
 	em, i {
 		font-style: italic;
 	}
@@ -209,8 +214,13 @@ input, select, textarea {
 	}
 
 		header > p {
-			font-size: 1.25em;
+			font-size: 1.0em;
 			margin: 0;
+		}
+		header > p a {
+			text-decoration: none;
+			color: #43B3E0;
+			/*color: inherit;*/
 		}
 
 	footer {
@@ -218,7 +228,7 @@ input, select, textarea {
 	}
 
 		footer > p {
-			font-size: 1.25em;
+			font-size: 1.0em;
 		}
 
 /* Container */
@@ -1631,7 +1641,13 @@ input, select, textarea {
 			display: block;
 			width: 100%;
 		}
-
+	.image.avatar48 {
+	/*width: 48px;*/
+	/*height: 48px;*/
+		width: 100px;
+		height: 100px;
+		background: #ff0000;
+	}
 		.image.fit {
 			display: block;
 			width: 100%;
@@ -1687,7 +1703,7 @@ input, select, textarea {
 		overflow: hidden;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
 		background-color: #43B3E0;
-		padding: 1em 2.35em 1em 2.35em;
+		padding: 0.5em 1em 0.5em 1em;
 		font-size: 1.1em;
 		max-width: 24em;
 	}
@@ -1715,7 +1731,7 @@ input, select, textarea {
 		input[type="reset"].large,
 		button.large,
 		.button.large {
-			font-size: 1.5em;
+			font-size: 1.2em;
 			letter-spacing: -0.025em;
 		}
 
@@ -1958,7 +1974,7 @@ input, select, textarea {
 		}
 
 		.icon:before {
-			font-size: 1.25em;
+			font-size: 1.75em;
 		}
 
 		.icon > .label {
@@ -1984,12 +2000,35 @@ input, select, textarea {
 				font-size: 6em;
 			}
 
+
+/* Icons */
+
+ul.icons {
+	cursor: default;
+	list-style: none;
+	padding-left: 0;
+}
+
+ul.icons li {
+	display: inline-block;
+	padding-left: 0;
+}
+
+ul.icons a {
+	display: inline-block;
+	width: 3em;
+	height: 3em;
+	line-height: 5em;
+	text-align: center;
+	border: 0;
+}
+
 /* Wrappers */
 
 	.wrapper {
 		background-image: url("images/bg.png");
 		box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-		padding: 8em 0 8em 0;
+		padding: 5em 0 5em 0;
 		text-align: center;
 	}
 
@@ -2012,6 +2051,7 @@ input, select, textarea {
 			background-color: #303030;
 			color: #999;
 			text-shadow: -1px -1px 0px #181818;
+			/*padding: 5em 0 4em 0;*/
 		}
 
 			.wrapper.style4 h1, .wrapper.style4 h2, .wrapper.style4 h3, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6 {
@@ -2105,7 +2145,7 @@ input, select, textarea {
 	}
 
 	#top {
-		padding: 10em 0 10em 0;
+		padding: 8em 0 5em 0;
 		text-align: left;
 	}
 
@@ -2125,7 +2165,7 @@ input, select, textarea {
 		}
 
 		#top p {
-			font-size: 1.5em;
+			font-size: 1.0em;
 			line-height: 1.75em;
 		}
 
@@ -2208,7 +2248,7 @@ input, select, textarea {
 		/* Articles */
 
 			#top {
-				padding: 8em 0;
+				padding: 5em 0;
 			}
 
 				#top .image {
@@ -2296,7 +2336,7 @@ input, select, textarea {
 			button,
 			.button {
 				text-align: center;
-				font-size: 1.2em;
+				font-size: 1.0em;
 				width: 100%;
 				padding: 1em 0 1em 0;
 			}
@@ -2443,3 +2483,85 @@ input, select, textarea {
 					}
 
 	}
+
+/* Icons-identity */
+
+table.icons-identity {
+	cursor: default;
+	/*padding-left: 0em;*/
+	/*margin-top: -0.675em;*/
+	margin-top: 0.5em;
+}
+
+table.icons-identity td {
+	display: inline-block;
+	padding: 0.675em 0.5em;
+}
+
+table.icons-identity td a {
+	text-decoration: none;
+	position: relative;
+	display: block;
+	width: 3.75em;
+	height: 3.75em;
+	border-radius: 100%;
+	border: solid 1px #c8cccf;
+	line-height: 3.75em;
+	overflow: hidden;
+	text-align: center;
+	text-indent: 3.75em;
+	white-space: nowrap;
+}
+
+table.icons-identity td a:before {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+	text-transform: none !important;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 400;
+}
+
+table.icons-identity td a:before {
+	/*color: #ffffff;*/
+	/*text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;*/
+	color: #B0ADD2;
+	/*text-shadow: 1.25px 0px 0px #a55fc7, -1.25px 0px 0px #a55fc7, 0px 1.25px 0px #a55fc7, 0px -1.25px 0px #a55fc7;*/
+	text-shadow: 1.25px 0px 0px #4A235A, -1.25px 0px 0px #4A235A, 0px 1.25px 0px #4A235A, 0px -1.25px 0px #4A235A;
+}
+
+table.icons-identity td a:hover:before {
+	/*text-shadow: 1.25px 0px 0px #ff7496, -1.25px 0px 0px #ff7496, 0px 1.25px 0px #ff7496, 0px -1.25px 0px #ff7496;*/
+	color: #ffffff;
+	text-shadow: 1.25px 0px 0px #A3362E, -1.25px 0px 0px #A3362E, 0px 1.25px 0px #A3362E, 0px -1.25px 0px #A3362E;
+}
+
+table.icons-identity td a:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: inherit;
+	height: inherit;
+	font-size: 1.85rem;
+	line-height: inherit;
+	text-align: center;
+	text-indent: 0;
+}
+
+table.icons-identity td a:hover {
+	border-color: #ff7496;
+}
+
+@media screen and (max-width: 480px) {
+
+	table.icons-identity td a:before {
+		font-size: 1.5rem;
+	}
+
+}
+
+
